@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}  
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(
+    to right bottom,
+    #c2ffef,
+    #9ad0ed
+    )
+}
+
+.wrapper {
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2.5em;
+   border: 3px solid #000;
+   border-radius: 2em;
+   padding: 5em 3em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    color: rgb(109, 153, 255)
+}
+
+#choices {
+    display: flex;
+    gap: 1em;
+}
+
+#choices button {
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#choices button:hover {
+    background-color: #ffffff;
+    border: 3px solid rgb(109, 153, 255);
+    transform: scale(1.05);
+}
+
+#player-choice {
+    font-size: 3.5em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px  50px;
+}
+
+#computer-choice,
+#resultDisplay {
+    font-size: 2em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 30px;
+}
+
+#resultDisplay {
+    color: #fff;
+}
+
+#resultDisplay.win {
+    background-color: #2e9d50;
+    border-color: #20743a;
+}
+
+#resultDisplay.lose {
+    background-color: #d94343;
+    border-color: #a92c2c;
+}
+
+#resultDisplay.draw {
+    background-color: #e6bd36;
+    border-color: #b28e1e;
+}
